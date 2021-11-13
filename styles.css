@@ -5,7 +5,6 @@
 body {
   margin: 0;
   overflow: hidden;
-  
 }
 
 .title {
@@ -37,7 +36,6 @@ body {
   left: var(--bird-size);
   top: calc(var(--bird-top) * 1px);
   border-radius: 50%;
-
 }
 
 .pipe {
@@ -52,7 +50,6 @@ body {
   position: absolute;
   width: 100%;
   background-color: hsl(100, 75%, 50%);
-
 }
 
 .pipe > .top {
