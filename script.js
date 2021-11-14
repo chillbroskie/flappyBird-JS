@@ -9,6 +9,7 @@ import {
 document.addEventListener("keypress", handleStart, { once: true })
 const title = document.querySelector("[data-title]")
 const subtitle = document.querySelector("[data-subtitle]")
+const footer = document.querySelector("[data-footer]")
 
 let lastTime
 function updateLoop(time) {
@@ -43,6 +44,7 @@ function isCollision(rect1, rect2) {
 
 function handleStart() {
   title.classList.add("hide")
+  footer.classList.add("show")
   setupBird()
   setupPipes()
   lastTime = null
@@ -53,6 +55,7 @@ function handleLose() {
   setTimeout(() => {
     title.classList.remove("hide")
     subtitle.classList.remove("hide")
+    footer.classList.remove("hide")
     subtitle.textContent = `${getPassedPipesCount()} Pipes`
     document.addEventListener("keypress", handleStart, { once: true })
   }, 100)
