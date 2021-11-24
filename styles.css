@@ -62,12 +62,3 @@ body {
   top: calc(100vh - (var(--hole-top) * 1px) + calc(var(--hole-height) * 1px));
 }
 
-.footer {
-  z-index: 10;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 30;
-
-}
